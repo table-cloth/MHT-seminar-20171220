@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     var questionCount: Int = 0
     var judgImageName:String = ""
     let NextQuestion = "NextQuestion"
+    var player: AVAudioPlayer?
     
     /*ここにpopupのインスタンスを生成する定義を書く*/
     var popupVC: PopupViewController!
@@ -93,7 +95,12 @@ class ViewController: UIViewController {
         questionStatusLabel.text = "\(questionCount+1)/\(questionList.count)"
         
         /* 最終問題の場合は音声を再生する */
-        
+        if questionCount + 1 == questionList.count {
+            if let sound = NSDataAsset(name: "last_question") {
+                player = try? AVAudioPlayer(data: sound.data)
+                player?.play()
+            }
+        }
     }
 
 // MARK: - Button Action -
