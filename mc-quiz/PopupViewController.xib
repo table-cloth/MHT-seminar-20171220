@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController" customModule="mc_quiz" customModuleProvider="target">
             <connections>
+                <outlet property="PopupView" destination="EHB-UY-Nly" id="n95-us-XHq"/>
+                <outlet property="imageView" destination="sai-bY-7UN" id="j89-CI-vKD"/>
+                <outlet property="popupView" destination="EHB-UY-Nly" id="G1b-Ct-K5O"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,6 +39,9 @@
                             <state key="normal" title="Close">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="close:" destination="-1" eventType="touchUpInside" id="Qj4-Ln-Lip"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

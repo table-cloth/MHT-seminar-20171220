@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     let NextQuestion = "NextQuestion"
     
     /*ここにpopupのインスタンスを生成する定義を書く*/
+    var popupVC: PopupViewController!
 
 // MARK: - Life Cycle -
     override func viewDidLoad() {
@@ -108,7 +109,12 @@ class ViewController: UIViewController {
         print("imageName = ",judgImageName,".png")
         
         /* ここにpopupの処理を書く */
-
+        popupVC = PopupViewController(nibName : "PopupViewController", bundle: nil)
+        popupVC.showInView(
+            self.view,
+            withImage: UIImage(named: judgImageName),
+            animated: true
+        )
 
     }
 
