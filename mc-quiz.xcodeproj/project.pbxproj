@@ -12,6 +12,10 @@
 		E7C14A641FEA83D1003087F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C14A621FEA83D1003087F1 /* LaunchScreen.storyboard */; };
 		E7C14A6D1FEA84D5003087F1 /* answer.csv in Resources */ = {isa = PBXBuildFile; fileRef = E7C14A6B1FEA84D5003087F1 /* answer.csv */; };
 		E7C14A6E1FEA84D5003087F1 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = E7C14A6C1FEA84D5003087F1 /* question.csv */; };
+		E7C14A731FEA861D003087F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C14A711FEA861C003087F1 /* Main.storyboard */; };
+		E7C14A741FEA861D003087F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C14A721FEA861C003087F1 /* ViewController.swift */; };
+		E7C14A771FEA877D003087F1 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C14A751FEA877D003087F1 /* PopupViewController.swift */; };
+		E7C14A781FEA877D003087F1 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C14A761FEA877D003087F1 /* PopupViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		E7C14A651FEA83D1003087F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7C14A6B1FEA84D5003087F1 /* answer.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = answer.csv; sourceTree = "<group>"; };
 		E7C14A6C1FEA84D5003087F1 /* question.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
+		E7C14A711FEA861C003087F1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E7C14A721FEA861C003087F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7C14A751FEA877D003087F1 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		E7C14A761FEA877D003087F1 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		E7C14A581FEA83D1003087F1 /* mc-quiz */ = {
 			isa = PBXGroup;
 			children = (
+				E7C14A711FEA861C003087F1 /* Main.storyboard */,
+				E7C14A751FEA877D003087F1 /* PopupViewController.swift */,
+				E7C14A761FEA877D003087F1 /* PopupViewController.xib */,
+				E7C14A721FEA861C003087F1 /* ViewController.swift */,
 				E7C14A6B1FEA84D5003087F1 /* answer.csv */,
 				E7C14A6C1FEA84D5003087F1 /* question.csv */,
 				E7C14A591FEA83D1003087F1 /* AppDelegate.swift */,
@@ -124,9 +136,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C14A641FEA83D1003087F1 /* LaunchScreen.storyboard in Resources */,
+				E7C14A731FEA861D003087F1 /* Main.storyboard in Resources */,
 				E7C14A611FEA83D1003087F1 /* Assets.xcassets in Resources */,
 				E7C14A6E1FEA84D5003087F1 /* question.csv in Resources */,
 				E7C14A6D1FEA84D5003087F1 /* answer.csv in Resources */,
+				E7C14A781FEA877D003087F1 /* PopupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C14A741FEA861D003087F1 /* ViewController.swift in Sources */,
 				E7C14A5A1FEA83D1003087F1 /* AppDelegate.swift in Sources */,
+				E7C14A771FEA877D003087F1 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
